@@ -237,7 +237,10 @@ def run_local_buildbitstreams():
             # hwdb_entry_name, platform_name, buildtool:version
             batch_hwdbs_in = [
                 # hwdb's to verify FPGA builds
-                ("vitis_firesim_rocket_singlecore_no_nic", "vitis", "vitis:2022.1"),
+
+                # TODO: disable due to not having xrt installed on localhost
+                #("vitis_firesim_rocket_singlecore_no_nic", "vitis", "vitis:2022.1"),
+
                 ("nitefury_firesim_rocket_singlecore_no_nic", "rhsresearch_nitefury_ii", "vitis:2022.1"),
                 ("alveo_u200_firesim_rocket_singlecore_no_nic", "xilinx_alveo_u200", "vitis:2021.1"),
                 ("alveo_u250_firesim_rocket_singlecore_no_nic", "xilinx_alveo_u250", "vitis:2021.1"),
