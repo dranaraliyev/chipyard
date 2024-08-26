@@ -14,8 +14,6 @@ def run_parallel_metasim():
     #   - machine-launch-script requirements are already installed
     #   - VCS is installed
 
-    # repo should already be checked out
-
     with prefix(f"cd {remote_fsim_dir}"):
         with prefix('source sourceme-manager.sh --skip-ssh-setup'):
             with prefix(f'cd {remote_cy_dir}/software/firemarshal'):
